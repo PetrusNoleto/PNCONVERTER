@@ -1,4 +1,4 @@
-const onerem = 0.06333333;
+const onerem = 0.0633;
 const clear = 0;
 const texto = "O valor em rem é: ";
 function converter() {
