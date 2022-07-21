@@ -58,7 +58,9 @@
         color: #fff;
     }
     .confirm-btn{
-        padding: 0.8rem;
+        
+        width: 100px;
+        height: 40px;
         font-weight: 700 ;
         background-color: #fff;
         border: none;
