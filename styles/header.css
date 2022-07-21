@@ -28,6 +28,13 @@
     font-size: 20px;
 
 }
+.header-logo img{
+    width: 2rem;
+    height: 2rem;
+
+
+
+}
 .header-menu{
     width: 80%;
     display: flex;
