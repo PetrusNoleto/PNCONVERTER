@@ -9,7 +9,7 @@
     <link rel = "stylesheet" type="text/css" href="styles/index.css">
     <link rel = "stylesheet" type="text/css" href="styles/header.css">
     <link rel = "stylesheet" type="text/css" href="styles/main.css">
-    <script src="/javascript/conversor.js"></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -35,24 +35,27 @@
                 <form action = "">
                     <label id = "pexels">
                         DIGITE O VALOR EM PIXELS
-                        <input autofocus placeholder = "digite um valor "type="number" name = "pxvalue" class= "pxvalue">
+                        <input autofocus placeholder = "digite um valor "type = "number" name = "pxvalue" class= "pxvalue" id = "px-value" value="">
                         
                     </label>
-                    <button  type = "submit" id = "confirm-btn" class ="confirm-btn">
+                    <button onclick ="function converter()" type = "button" id = "converter-btn" class ="confirmbtn">
                         Converter
-                    </button>
+                    </button >
                 </form>
+          
+                <label id = "Remvalue" class="Remvalue">
+                    Valor em REM
+                    <span id = "resultado" class = "resultado"></span>
+                </label>
+               
             </div>
            
+ 
 
 
-
-
-                
             
-
-
-
+                
+        
         </main>
 
 
@@ -65,7 +68,8 @@
    
 
 
-
+        <script src="javascript/conversor.js"></script>
+       
 
 </body>
 </html>
