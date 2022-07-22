@@ -2,8 +2,6 @@
    const $cardresult = document.querySelector(".resultacount")
    const $closeresultcard = document.querySelector(".close-icon")
 
-
-
    function openfunctions() {
         opencard()
 
