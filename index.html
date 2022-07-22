@@ -5,29 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Px to Rem conversor</title>
-    <script src="/javascript/conversor.js"></script>
+    <link rel="icon" href="img/logo.svg" type="image/x-icon">
+    <link rel = "stylesheet" type="text/css" href="styles/index.css">
+    <link rel = "stylesheet" type="text/css" href="styles/header.css">
+    <link rel = "stylesheet" type="text/css" href="styles/main.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="description" content="Conversor de pixels para Rem">
 
 </head>
-<body>
-    <div>
-        <div>
-            <h1>Converter PX to REM</h1>
-            <input class = "cnv-input" name = "valuepx" id = "cnv-input" placeholder="Digite O valor em px">
-            <button onclick="converter()" class="cnv-button" type = "submit" id = "cnv-button" >Converter</button>
-            <button onclick="limpar()" class="cnv-button-clear" type = "submit" id = "cnv-button" >Reload</button>
+<body id = "container">  
+ 
+        <header class = "header">
+            <div class="header-content">
+                <div class ="header-logo">
+                    <a href = "index.html"><span class = "logo">PNCONVERTER</span></a>
+                </div>
+                <div class ="header-menu">
+                    <img alt = "cliquepara Abrir um menu-icon " class="iconheader-menu" src = "img/menu-icon.svg">
+                </div>
+            </div>
+        </header>
+        <main class = "main">
+            <div class = "main-content">
 
-            <span class = "cvn-result" id ="cvn-result">0</span>
+                <h1><span class="effect-text">PX</span> to <span class="effect-text">REM</span> converter</h1>
+                <form action = "">
+                    <label id = "pexels">
+                        DIGITE O VALOR EM PIXELS
+                        <input autofocus placeholder = "digite um valor "type = "number" name = "pxvalue" class= "pxvalue" id = "px-value" value="">
+                        
+                    </label>
+                    <button onclick ="function converter()" type = "button" id = "converter-btn" class ="confirmbtn">
+                        Converter
+                    </button >
+                </form>
+          
+                <label id = "Remvalue" class="Remvalue">
+                    Valor em REM
+                    <span id = "resultado" class = "resultado"></span>
+                </label>
+               
+            </div>
            
-        </div>
+ 
+
+
+            
+                
+        
+        </main>
 
 
 
 
 
-    </div>
+
+  
+
+   
 
 
-
+        <script src="javascript/conversor.js"></script>
+       
 
 </body>
 </html>

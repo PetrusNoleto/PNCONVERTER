@@ -1,49 +1,29 @@
-/*
-function firstalert(user){
-    console.log("Olá, " + user);
-    
-    }
-    firstalert("Petrus"); //"olá mundo"
+   const $openresultcard = document.querySelector(".confirmbtn")
+   const $cardresult = document.querySelector(".resultacount")
+   const $closeresultcard = document.querySelector(".close-icon")
+
+   function openfunctions() {
+        opencard()
 
 
-var test = "douglas";
-
-function firstif(){
-    
-    if(test === "name"){
-        console.log("Sim você está cadastrado");
-    }
-    else{
-        console.log("Crie uma conta, você não está cadastrado!");
-    }
-}
-
-
-    */
+   }
 
 
 
-var onerem = 16;
-var onepx = 0.06;
+   
+            $openresultcard.addEventListener("click",function opencard(){
 
-    var converterpxrem = 1 * onerem;
-    var converterrempx = 1 * onepx;
-
-console.log(converterpxrem) 
-console.log(converterrempx)
+                $cardresult.classList.remove("hidden")
 
 
 
+            })
+            $closeresultcard.addEventListener("click",function closecard(){
+
+                $cardresult.classList.add("hidden")
 
 
 
+            })
 
-
-
-
-
-
-
-
-
-
+           
