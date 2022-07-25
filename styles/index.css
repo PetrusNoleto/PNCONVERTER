@@ -17,7 +17,7 @@
 
 #container{
     color: var(--colordark);
-   
+    background-color: #5100F0;
     font-family: 'Poppins', sans-serif;
     width: 100vw;
     height: 100vh;
