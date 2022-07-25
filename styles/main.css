@@ -1,7 +1,7 @@
 .ConvBox{
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 420px;
     height: 500px;
     align-items: center;
     background-color: #5100F0;
