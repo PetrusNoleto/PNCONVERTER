@@ -1,5 +1,4 @@
-    
-    const $button = document.querySelector(".btn-converter")
+   const $button = document.querySelector(".btn-converter")
     $button.addEventListener("click", converter())
     
     function converter(){
