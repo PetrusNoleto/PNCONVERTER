@@ -1,14 +1,29 @@
+:root{
+    --bglight:#fff;
+    --bgdark:#2a2a2a;
+    --colorlight:#2a2a2a;
+    --colordark:#fff;
+    --bgboxiframe:#7430FA;
+    font-size: 16px;
+}
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
 #container{
-    font-size: 16px;
-    background-color: #04D361;
+    color: var(--colordark);
+    background-color: #5100F0;
     font-family: 'Poppins', sans-serif;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 
 }

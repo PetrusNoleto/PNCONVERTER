@@ -1,10 +1,28 @@
-const onerem = 0.0625;
-const texto = "O valor em rem é: ";
-const $convbtn = document.querySelector(".confirmbtn")
+   const $button = document.querySelector(".btn-converter")
+    $button.addEventListener("click", converter())
+    
+    function converter(){
+        const _fontSizeDefault = 16
+        let $fontSize = document.querySelector(".getfontsize").value
+        let $pxvalue = document.querySelector(".getPixels").value
+    
+            if($fontSize == _fontSizeDefault){
+                let _calcFontSizeDefault = Number($pxvalue / _fontSizeDefault) 
+                let _result = _calcFontSizeDefault
+                document.querySelector(".resulttxt").textContent = _result
 
-$convbtn.addEventListener("click", function converter(){
+            }
+            else($fontSize != _fontSizeDefault) 
+                let _remcalc = Number($pxvalue / $fontSize)
+                document.querySelector(".resulttxt").textContent = (_remcalc)
+        
+            
+            if($fontSize, $pxvalue == 0){
+                document.querySelector(".resulttxt").textContent = ("")
+            }
+        
 
-    let pxvalue = document.querySelector(".pxvalue").value
-    let valueconvert = Number(pxvalue * onerem)
-    document.querySelector(".resultado").textContent =  valueconvert
-} )
+
+    
+
+}

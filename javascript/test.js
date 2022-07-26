@@ -1,29 +1,16 @@
-   const $openresultcard = document.querySelector(".confirmbtn")
-   const $cardresult = document.querySelector(".resultacount")
-   const $closeresultcard = document.querySelector(".close-icon")
+const $button = document.querySelector(".calcbutton")
+const $fontSize = document.querySelector(".font-size-value").value
+const $pxvalue =    document.querySelector(".px-value").value
 
-   function openfunctions() {
-        opencard()
+let teste = $pxvalue / $fontSize
 
 
-   }
+
+console.log(teste)
+
+
+
 
 
 
    
-            $openresultcard.addEventListener("click",function opencard(){
-
-                $cardresult.classList.remove("hidden")
-
-
-
-            })
-            $closeresultcard.addEventListener("click",function closecard(){
-
-                $cardresult.classList.add("hidden")
-
-
-
-            })
-
-           

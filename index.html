@@ -17,50 +17,43 @@
 
 </head>
 <body id = "container">  
+
+        <main class ="ConvBox"> 
+            <header class = "header">
+                <span class ="header-text">Px to Rem</span>
+                <span class ="header-text-">Converter</span>
+            </header>
+            <section class ="conv"> 
+               
+
  
        
-        <main class = "main">
-            <div class = "main-content">
+      
 
-                <h1><span class="effect-text">PX</span> to <span class="effect-text">REM</span> converter</h1>
-                <form action = "">
-                    <label id = "pexels">
-                        DIGITE O VALOR EM PIXELS
-                        <input autofocus placeholder = "digite um valor "type = "number" name = "pxvalue" class= "pxvalue" id = "px-value" value="">
-                        
-                    </label>
-                    <button onclick ="function converter()" type = "button" id = "converter-btn" class ="confirmbtn">
-                        Converter
-                    </button >
-                </form>
-          
-                <label id = "Remvalue" class="Remvalue">
-                    Valor em REM
-                    <span id = "resultado" class = "resultado"></span>
-                </label>
                
-            </div>
-           
- 
+               <form class = "form" action="">
+                <label class = "labels">Font-size
+                    <input placeholder="Digite o font size " name = "font-size" id ="font-size" type = "number" value = "16" class ="getfontsize">
+                </label>
+                <label class = "labels"> Digite o valor em Pixels
+                    <input placeholder="Digite um valor em pixels" name = "getPixels" id ="getPixels" type = "number" value = "" class ="getPixels">
+                </label>
+                <label class = "labels">
+                    <button onclick="converter()" name = "btn-converter" id ="btn-converter" type = "button" class ="btn-converter">converter</button>
+                </label> 
+            </form>
+            </section>
+            <section class = "boxresult">
+                <span class ="resulttxt">0 Rem</span>
 
+            </section>
 
-            
-                
-        
         </main>
 
 
 
 
-
-
-  
-
-   
-
-
-        <script src="javascript/conversor.js"></script>
        
-
+<script src ="javascript/conversor.js"></script>
 </body>
 </html>

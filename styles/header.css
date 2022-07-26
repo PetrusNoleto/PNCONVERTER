@@ -1,51 +1,27 @@
 .header{
     width: 100%;
-    height: 3rem;
-    background-color: #04D361;
-    box-shadow: 1px 1px 15px black;
+    height: 4rem;
+    line-height: 100%;
+    background-color: var(--bglight);
+    color:  var(--bgdark);
+    border-radius: 8px 8px 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    flex-direction: column;
+    box-shadow: #2a2a2a 0px 2px 2px; 
 }
-.header-content{
-    display: flex;
-    width: 90%;
-    align-items: center;
-
-
-
-
-}
-.header-logo{
-    width: 20%;
+.header-text{
     
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0.5rem;
 }
-.header-logo a{
-    text-decoration: none;
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 20px;
-
-}
-.header-logo img{
-    width: 2rem;
-    height: 2rem;
+.header-text-{
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
 
 
-
-}
-.header-menu{
-    width: 80%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-
-}
-.header-menu a{
-   
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    text-decoration: none;
 }
