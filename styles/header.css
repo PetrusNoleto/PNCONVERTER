@@ -2,26 +2,39 @@
     width: 100%;
     height: 4rem;
     line-height: 100%;
-    background-color: var(--bglight);
-    color:  var(--bgdark);
+    color:  var(--darkTextColor);
     border-radius: 8px 8px 0 0;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    box-shadow: #2a2a2a 0px 2px 2px; 
+    padding: 0px 20px;
+    justify-content: space-between;
+    position: fixed;
 }
-.header-text{
-    
-    font-size: 30px;
+.headerBrand{
+    position: relative;
+    width: auto;
+    height: 2rem;
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+.headerBrandImage{
+    width: 2rem;
+    height: 2rem;
+}
+.headerBrandName{
+    font-size: 1.125rem; 
     font-weight: 600;
-    text-transform: uppercase;
-    margin: 0.5rem;
+    text-transform: capitalize;
 }
-.header-text-{
-    font-size: 15px;
-    font-weight: 300;
-    text-transform: uppercase;
-
-
+.headerNavbar{
+    width: auto;
+    height: auto;
+    display: flex;
+    gap: 0.75rem;
+}
+.headerNavbarIcon{
+    fill: var(--whiteBackgroundColor);
+    width: 2rem;
+    height: 2rem;
 }
