@@ -1,5 +1,3 @@
-//    const $button = document.querySelector(".btn-converter")
-//     $button.addEventListener("click", converter())    
 function conversorPxToRem(){
     const fontSizeDefault = 16
     let $PxToRemfontSize = document.querySelector(".conversorPxToRemGetFontSize").value

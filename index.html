@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pnconverter</title>
-    <link rel="icon" href="./public/images/brand.png" type="image/x-icon">
-    <link rel = "stylesheet" type="text/css" href="styles/default.css">
+    <link rel="icon" href="./public/images/brand.webp" type="image/x-icon">
+    <link rel = "stylesheet" type="text/css" href="./styles/header.css">
+    <link rel = "stylesheet" type="text/css" href="./styles/main.css">
+    <link rel = "stylesheet" type="text/css" href="./styles/conversorBox.css">
+    <link rel = "stylesheet" type="text/css" href="./styles/footer.css">
+    <link rel = "stylesheet" type="text/css" href="./styles/default.css">
+    <meta name="description" content="criado para facilitar a conversão de dados que são frequentemente ultilizados em projetos">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <meta name="description" content="criado para facilitar a conversão de dados que são frequentemente ultilizados em projetos">
+    <link rel="preload" fetchpriority="high" as="image" href="./public/images/brand.webp" type="image/webp">
+    <link rel="preload" fetchpriority="high" as="image" href="./public/images/hero.webp" type="image/webp">
 </head>
 <body>  
         <header class="header">
@@ -25,7 +31,7 @@
             <section class="mainHero">
                 <h1 lang="en"  class="mainHeroTitle">pnconverter</h1>
                 <p class="mainHeroDescription">criado para facilitar a conversão de dados que são frequentemente ultilizados em projetos</p>
-                <a href="#mainConversorsList"  class="mainHeroButton">lista de conversores</a>
+                <a href="#mainConversorsList" title="ir para a lista de conversores" class="mainHeroButton">lista de conversores</a>
             </section>
             <section class="mainConversors">
                 <div class="mainComversorsHero"><h2 class="mainComversorsHeroTitle">conversores</h2></div>
@@ -50,20 +56,19 @@
                             </form>
                             <div class="mainConversorResult hidden"> <span class="mainConversorResultValue conversorPxToRemResult "></span></div>
                         </div>
-                    </li>
-                    
+                    </li>    
                 </ul>
             </section>
         </main>
         <footer class="footer">
             <div class="footerBrand">
-                <image src = "./public/images/brand.png" alt = "" class="footerBrandImage"/>
+                <image src = "./public/images/brand.webp" alt = "logo usada por petrus noleto em seu perfil e projetos pessoais" class="footerBrandImage"/>
                 <h4 class="footerBrandName">petrus noleto</h4>
             </div>
             <ul class="footerList">
-                <li class="footerListItem"><a href="https://www.instagram.com/@petrusnoleto/" target="_blank" class="footerListItemLink">instagram</a></li>
-                <li class="footerListItem"><a href="https://www.linkedin.com/in/petrusnoleto/" class="footerListItemLink" target="_blank">linkedin</a></li>
-                <li class="footerListItem"><a href="https://github.com/PetrusNoleto" class="footerListItemLink" target="_blank">github</a></li>
+                <li class="footerListItem"><a href="https://www.instagram.com/@petrusnoleto/" title="ir para o instagram de petrus noleto" target="_blank" class="footerListItemLink">instagram</a></li>
+                <li class="footerListItem"><a href="https://www.linkedin.com/in/petrusnoleto/" title="ir para o linkedin de petrus noleto" class="footerListItemLink" target="_blank">linkedin</a></li>
+                <li class="footerListItem"><a href="https://github.com/PetrusNoleto" title="ir para o github de petrus noleto" class="footerListItemLink" target="_blank">github</a></li>
             </ul>
        
         </footer>

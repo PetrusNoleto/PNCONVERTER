@@ -1,2 +1,2 @@
-# PXTOREM
-Conversor de PX para REM
+# PN CONVERTER V2.0 BETA
+

@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url("../public/images/hero.png");
+    background: url("../public/images/hero.webp");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 120px;
@@ -82,4 +82,14 @@
 }
 .mainConversorResultValue{
     font-size: 24px;
+}
+
+@media (min-width: 0px) and (max-width: 640px) {
+    .mainHeroTitle{
+        font-size: 48px;
+    }
+    .mainHeroDescription{
+        width: 360px;
+        font-size: 14px;
+    }
 }
