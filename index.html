@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <title>pnconverter</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pnconverter</title>
+    <meta name="description" content="criado para facilitar a conversão de dados que são frequentemente ultilizados em projetos">
     <link rel="icon" href="./public/images/brand.webp" type="image/x-icon">
     <link rel = "stylesheet" type="text/css" href="./styles/header.css">
     <link rel = "stylesheet" type="text/css" href="./styles/main.css">
     <link rel = "stylesheet" type="text/css" href="./styles/conversorBox.css">
     <link rel = "stylesheet" type="text/css" href="./styles/footer.css">
     <link rel = "stylesheet" type="text/css" href="./styles/default.css">
-    <meta name="description" content="criado para facilitar a conversão de dados que são frequentemente ultilizados em projetos">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -40,21 +40,21 @@
                         <div class="conversorBox">
                             <h3 class="conversorBoxTitle">px to rem</h3>
                             <p class="conversorBoxDescription">use esse conversor para converter e <span class="conversorBoxDescription bold">pixel</span> para <span class="conversorBoxDescription bold">rem</span>, usado na estilização de projetos que ultilizam<span class="conversorBoxDescription bold"> css </span>puro</p>
-                            <form class="conversorBoxForm">
-                                <label class="conversorBoxFormLabel">
+                            <form class="conversorBoxForm" id="formConvertPXtoRem">
+                                <label class="conversorBoxFormLabel" for="pxToRemFontSize">
                                      <p class="conversorBoxFormLabelDescription">digite o font-size padrão do seu projeto</p>
                                      <span class="conversorBoxFormLabelExample bold">somente numeros</span>
                                      <span class="conversorBoxFormLabelExample bold">padrão do conversor 16px</span>
-                                     <input class="conversorBoxFormLabelInput conversorPxToRemGetFontSize" type="number" value="16"/>
+                                     <input name="pxToRemFontSize" id="pxToRemFontSize" class="conversorBoxFormLabelInput conversorPxToRemGetFontSize" type="number" value="16" />
                                 </label>
-                                <label class="conversorBoxFormLabel">
+                                <label class="conversorBoxFormLabel" for="pxToRemPxValue">
                                      <p class="conversorBoxFormLabelDescription">digite o valor em pixel que deseja converter</p>
                                      <span class="conversorBoxFormLabelExample bold">somente numeros</span>
-                                    <input class="conversorBoxFormLabelInput conversorPxToRemGetPixels" type="number" required/>
+                                    <input name="pxToRemPxValue" id="pxToRemPxValue" class="conversorBoxFormLabelInput conversorPxToRemGetPixels" type="number" value="0" required />
                                 </label>
                                 <button class="conversorBoxFromButton" type="button" onclick="conversorPxToRem()">converter</button>
                             </form>
-                            <div class="mainConversorResult hidden"> <span class="mainConversorResultValue conversorPxToRemResult "></span></div>
+                            <div class="mainConversorResult hidden"> <span class="mainConversorResultValue conversorPxToRemResult">0rem</span><button type="button" class="mainConversorResultValueCopy" onclick="conversorPxToRemCopyResultValue()">copiar</button></div>
                         </div>
                     </li>    
                 </ul>
@@ -66,11 +66,14 @@
                 <h4 class="footerBrandName">petrus noleto</h4>
             </div>
             <ul class="footerList">
-                <li class="footerListItem"><a href="https://www.instagram.com/@petrusnoleto/" title="ir para o instagram de petrus noleto" target="_blank" class="footerListItemLink">instagram</a></li>
+                <li class="footerListItem"><a href="/" title="ir para o inicio da pagina"  class="footerListItemLink">inicio</a></li>
+                <li class="footerListItem"><a href="#mainConversorsList" title="ir para a lista de conversores" class="footerListItemLink" >lista de conversores</a></li>
+            </ul>
+            <ul class="footerList">
+                <li class="footerListItem"><a href="https://www.instagram.com/petrusnoleto/" title="ir para o instagram de petrus noleto" target="_blank" class="footerListItemLink">instagram</a></li>
                 <li class="footerListItem"><a href="https://www.linkedin.com/in/petrusnoleto/" title="ir para o linkedin de petrus noleto" class="footerListItemLink" target="_blank">linkedin</a></li>
                 <li class="footerListItem"><a href="https://github.com/PetrusNoleto" title="ir para o github de petrus noleto" class="footerListItemLink" target="_blank">github</a></li>
             </ul>
-       
         </footer>
         <script src ="./scripts/pxtoremconverter.js" type="text/javascript"></script>
 </body>

@@ -16,7 +16,7 @@
 }
 body {
     background: var(--whiteBackgroundColor);
-    color:var(--textColor) ;
+    color:var(--textColor);
 }
 .bold{
   font-weight: 700;
