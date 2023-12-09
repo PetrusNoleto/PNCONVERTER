@@ -3,8 +3,11 @@ const conversorPxToRem = () => {
     let $PxToRemPxvalue = document.querySelector(".conversorPxToRemGetPixels").value;
     let $getClassForResult = document.querySelector(".mainConversorResult").classList;
     let $getResultLocation = document.querySelector(".conversorPxToRemResult");
+    let $getcopybuttonText = document.querySelector(".mainConversorResultValueCopy");
     const calcRem = Number($PxToRemPxvalue/$PxToRemfontSize);
     $getClassForResult.remove("hidden");
+    $getcopybuttonText.classList.remove("mainConversorResultValueSuccess");
+    $getcopybuttonText.textContent = "copiar";
     console.log($getResultLocation.textContent = (`${calcRem}rem`));
 };
 const conversorPxToRemCopyResultValue = () => {
