@@ -17,5 +17,4 @@ const conversorPxToRemCopyResultValue = () => {
     };
     $getcopybuttonText.textContent = "copiado";
     $getcopybuttonText.classList.add("mainConversorResultValueSuccess");
-    alert("copiado");
 };
